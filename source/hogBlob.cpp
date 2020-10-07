@@ -7,7 +7,7 @@ void feat::extBlobFeat(Mat& imgSrc, vector<SBlob>& blobs)
 	double dSigmaStep = 1;
 
 	Mat image;
-	cvtColor(imgSrc, image, CV_BGR2GRAY);
+	cvtColor(imgSrc, image, COLOR_BGR2GRAY);
 	image.convertTo(image, CV_64F);
 
 	vector<double> ivecSigmaArray;

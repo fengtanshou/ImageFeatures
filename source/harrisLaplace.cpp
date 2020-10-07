@@ -5,7 +5,7 @@ void feat::detectHarrisLaplace(const Mat& imgSrc, Mat& imgDst)
 	Mat gray;
 	if (imgSrc.channels() == 3)
 	{
-		cvtColor(imgSrc, gray, CV_BGR2GRAY);
+		cvtColor(imgSrc, gray, COLOR_BGR2GRAY);
 	}
 	else
 	{
